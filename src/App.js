@@ -123,6 +123,7 @@ function App() {
         {/* Y-axis values */}
         <div style={{ position: 'absolute', left: '-45px', top: '0', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
           <span>5  </span>
+          <span>3  </span>
           <span>1  </span>
         </div>
 
@@ -147,6 +148,7 @@ function App() {
           justifyContent: 'space-between',
         }}>
           <span>1</span>
+          <span>3</span>
           <span>5</span>
         </div>
 

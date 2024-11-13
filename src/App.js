@@ -76,7 +76,7 @@ function App() {
           onChange={(e) => setInputText(e.target.value)}
           onKeyPress={(e) => e.key === 'Enter' && addComponent()}
           style={{ padding: '8px', borderRadius: '4px', border: '1px solid #ccc', width: '200px' }}
-          placeholder="Enter Stakeholder name"
+          placeholder="Enter an initiative here"
         />
         <button
           onClick={addComponent}
@@ -89,7 +89,7 @@ function App() {
             cursor: 'pointer'
           }}
         >
-          Add Stakeholder
+          Add Initiative
         </button>
         <button
           onClick={captureScreen}
@@ -117,14 +117,13 @@ function App() {
           whiteSpace: 'nowrap',
           fontWeight: 'bold'
         }}>
-          Interest
+          "Impact (1 to 5)"
         </div>
         
         {/* Y-axis values */}
         <div style={{ position: 'absolute', left: '-45px', top: '0', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
-          <span>High</span>
-          <span>Medium</span>
-          <span>Low</span>
+          <span>5  </span>
+          <span>1  </span>
         </div>
 
         {/* X-axis label */}
@@ -135,7 +134,7 @@ function App() {
           transform: 'translateX(-50%)',
           fontWeight: 'bold'
         }}>
-          Influence
+          "Effort (1 to 5)"
         </div>
 
         {/* X-axis values */}
@@ -147,9 +146,8 @@ function App() {
           display: 'flex', 
           justifyContent: 'space-between',
         }}>
-          <span>Low</span>
-          <span>Medium</span>
-          <span>High</span>
+          <span>1</span>
+          <span>5</span>
         </div>
 
         <div style={{
@@ -175,8 +173,8 @@ function App() {
               position: 'relative'
             }}>
               <div className="quadrant-label">
-                Minimal Effort
-                <div className="quadrant-description">Low influence, low interest – little engagement required</div>
+                Quick Wins
+                <div className="quadrant-description">Quadrant 1</div>
               </div>
             </div>
             <div style={{ 
@@ -184,8 +182,8 @@ function App() {
               position: 'relative'
             }}>
               <div className="quadrant-label">
-                Monitor
-                <div className="quadrant-description">High influence, low interest – track but engage minimally</div>
+                Major Projects
+                <div className="quadrant-description">Quadrant 2</div>
               </div>
             </div>
             <div style={{ 
@@ -193,14 +191,14 @@ function App() {
               position: 'relative'
             }}>
               <div className="quadrant-label">
-                Show Consideration
-                <div className="quadrant-description">Low influence, high interest – keep informed and value their interest</div>
+                Low Priority
+                <div className="quadrant-description">Quadrant 3</div>
               </div>
             </div>
             <div style={{ position: 'relative' }}>
               <div className="quadrant-label">
-                Key Players
-                <div className="quadrant-description">High influence, high interest – actively engage and involve</div>
+                Avoid
+                <div className="quadrant-description">Quadrant 4</div>
               </div>
             </div>
           </div>
